@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="zh-TW" />
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author"  content="小宇宙資訊有限公司,www.cosmosdesign.tw" />
+    <meta name="COPYRIGHT" content="Copyright (c) by 小宇宙資訊有限公司,www.cosmosdesign.tw">
+    <meta name="keywords" Lang="EN" content=" "/>
+    <meta name="keywords" Lang="zh-TW" content=" " />
+    <!--css檔連結區-->
+    <link href="css/cssreset.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- semantic UI -->
+    <link href="css/semantic.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- 網站區layout -->
+    <link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--js檔連結區-->
+    <script src="js/jquery.js"></script>
+     <!-- i18n -->
+    <script type="text/javascript" language="JavaScript"src="js/jquery.i18n.properties-min.js"></script>
+    <!-- <script src="js/jquery.i18n.js"></script> -->
+   
+
+</head>
+<body>
+    
+    <br><br><br>
+    <div id="content" style="padding:60px;"> 
+        <div> 
+            <label id="label_username"></label> 
+            <input type="text" id="username" style="background:#dcdcdc;"></input> 
+        </div> 
+        <div> 
+            <label id="label_password"></label> 
+            <input type="password" id="password" style="background:#dcdcdc;"></input> 
+        </div> 
+        <input type="button" id="button_login"/> 
+    </div>
+    <br><br><br>
+
+    <script>
+        // jQuery.i18n.properties({
+        //       name: 'Messages', 
+        //       callback: function(){ alert( org.somekey ); }
+        // });
+        function loadProperties(){ 
+            jQuery.i18n.properties({// 加载资浏览器语言对应的资源文件
+                name:'strings', // 资源文件名称
+                path:'resources/i18n/', // 资源文件路径
+                mode:'map', // 用 Map 的方式使用资源文件中的值
+                callback: function() {// 加载成功后设置显示内容
+                    // 显示“用户名”
+                    $('#label_username').html($.i18n.prop('string_username')); 
+                    // 显示“密码”
+                    $('#label_password').html($.i18n.prop('string_password')); 
+                    // 显示“登录”
+                    $('#button_login').val($.i18n.prop('string_login')); 
+                } 
+            }); 
+        }
+    </script>
+</body>
+</html>

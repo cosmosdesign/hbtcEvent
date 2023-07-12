@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="zh-TW" />
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!--css檔連結區-->
+    <link href="css/cssreset.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- semantic UI -->
+    <link href="css/semantic.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--js檔連結區-->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.md5.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <!-- i18n -->
+    <script src="i18n/jquery.i18n.js"></script>
+    <script src="i18n/jquery.i18n.messagestore.js"></script>
+    <script src="i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="i18n/jquery.i18n.language.js"></script>
+    <script src="i18n/jquery.i18n.parser.js"></script>
+    <script src="i18n/jquery.i18n.emitter.js"></script>
+    <script src="i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="i18n/i18n-config.js"></script>
+    <!-- 時間區間特效 -->
+    <!-- <link href="css/flatpickr.min.css" rel="stylesheet" type="text/css" media="all"> -->
+    <!-- <script src="js/flatpickr.js"></script> -->
+    <!-- 上傳圖片js -->
+    <!-- <link rel="stylesheet" href="dropify/css/dropify.min.css"> -->
+    <!-- <script src="dropify/js/dropify.min.js"></script>   -->
+    <!-- table sort特效 -->
+    <script src="js/table-sort.js"></script>
+    <!-- loading特效 -->
+    <link href="css/loader.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/jquery.nimble.loader.js"></script>
+    <!-- 設定檔 -->
+    <script src="js/config.js"></script>
+    <!-- 本頁js -->
+    <script src="js/js-order-form.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/web-js.js"></script>
+
+    <!-- banner特效 -->
+    <!-- <link href="vendor/Owl/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="vendor/Owl/owl.carousel.js"></script>
+    <script language="javascript">
+    $(document).ready(function() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 5000,
+            loop: false,
+            nav: true,
+            responsive: {
+                320: {
+                    items: 1
+                },
+                1024: {
+                    items: 2
+                },
+                1500: {
+                    items: 3
+                },
+                1900: {
+                    items: 4
+                }
+            }
+        })
+    })
+    </script> -->
+
+    <!-- 網站區layout -->
+    <link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        @page{
+            
+        }
+     </style>
+</head>
+<body class="formBg">
+    <div class="fromA4 form-orderform">
+        <div class="formTitArea">
+            <h1>製令單</h1>
+            <div class="formTitArea-info">
+                <section class="formTitArea-infoSection">
+                    <p class="formTitArea-infoSection--boldText">LOT.NO.　99864</p>
+                    <p>日期：2021/12/22</p>
+                    <p>產量：11.9000 KG</p>
+                </section>
+                <section class="formTitArea-infoSection">
+                    <p class="formTitArea-infoSection--boldText">產品代號：SH-501-267</p>
+                    <p>客戶編號：SHC-001</p>
+                    <p>製令單號：20211220001</p>
+                </section>
+            </div>
+            <table class="form-orderform-table">
+                <thead>
+                    <th>順序</th>
+                    <th>原料</th>
+                    <th>重量</th>
+                    <th>單位</th>
+                    <th>重量</th>
+                    <th>單位</th>
+                    <th>原物料批號</th>
+                    <th>庫存</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SH-501-267</td>
+                        <td>11</td>
+                        <td>KG</td>
+                        <td>900</td>
+                        <td>g</td>
+                        <td>???</td>
+                        <td>有</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                操作步驟：
+                <br />
+                1.(1-5)混合攪拌
+                <br />
+                2.研磨三次
+                <br />
+                3.攪拌均勻
+            </p>
+            <br />
+            <br />
+            <div class="formTitArea-footer">
+                <p class="formTitArea-footerSection">課長：</p>
+                <p class="formTitArea-footerSection">發料者：</p>
+                <p class="formTitArea-footerSection">請料者：</p>
+                <p class="formTitArea-footerSection">製單者：</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    <!-- 列印 -->
+    <script>
+        $(document).ready(function() {
+            window.print();
+        });
+    </script>
+
+</body>
+</html>
