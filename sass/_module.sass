@@ -110,7 +110,7 @@
 	margin-bottom: -3px
 .modInfoBk-EminfoBk--info--data
 	font:
-		family: $text-styleRegular--en
+		family: $text-styleRegular--en,$text-styleMedium--ch
 
 .modInfoBk-EminfoBk--info--textDes
 	width: 100%
@@ -121,17 +121,22 @@
 	align-items: flex-start
 	justify-content: flex-start
 	flex-wrap: no-wrap	
+	&:nth-of-type(2n)
+		background: #FFF
 	@include maxcom-1920
 		padding: 12px 40px
 	.modInfoBk-EminfoBk--info--tit
-		min-width: 110px
+		min-width: 140px
 
 .modInfoBk-EminfoBk--info:last-of-type
 	border-right: none
 
 .modInfoBk-EminfoBk--lineDec
 	border-left: 2px solid $main-color-100
-	padding-left: 40px
-	padding-right: 40px
+	padding-left: 30px
+	padding-right: 30px
+	margin: 15px
+	+maxcom-1920
+		margin: 0px
 	&:last-of-type
 		border-right: 2px solid $main-color-100

@@ -66,8 +66,6 @@
         right: 40px
         font:
             size: $text-60
-
-
 .pagOverOrderBk
     width: 100%
     padding-top: 10px
@@ -77,15 +75,15 @@
     @include maxcom
         padding: 0 0 40px 0
 
-        
-.pagOrderListBk
+
+.pagEventListBk
     @include maxcom
         width: auto
         padding-left: 12px
         padding-right: 12px
         padding-bottom: 15px
         overflow-x: auto
-.pagOrderList
+.pagEventList
     padding: 30px 
     border-bottom: $gray_line
     @include maxcom
@@ -99,30 +97,30 @@
             background: #FFF
     @include maxcom-1920
         min-width: 100%
-.pagOrderList-tit--phone
+.pagEventList-tit--phone
     width: 100%
     font:
         size: $text-14
         family: 'NotoSansTC-Regular', sans-serif
     @include maxcom
         display: none
-.pagOrderList-statusOrder--phone
+.pagEventList-statusOrder--phone
     width: 100%
     @include maxcom
         display: none
-.pagOrderList-statusOrder--phone--text
+.pagEventList-statusOrder--phone--text
     font:
-        size: $text-24
-        family: $text-styleRegular--en
+        size: $text-20
+        family: $text-styleMedium--ch
     color: $main-color
-    text-decoration: underline
+    // text-decoration: underline
     img
         width: 30px
         height: 30px
         margin: 0 12px 0 0
         vertical-align: -8px
 //電腦時以表格呈現
-.pagOrderList--maxcomBk
+.pagEventList--maxcomBk
     @include maxcom
         display: flex
         //不知為何，現在要加display: -webkit-box，flex才會是設定的固定寬度
@@ -134,7 +132,7 @@
         align-items: center
         
 //手機時以card呈現，電腦時以表格呈現
-.modPhineCardMaxcomTable-dataArea
+.modPhoneCardMaxcomTable-dataArea
     width: 100%
     border-bottom: $gray_line
     padding-top: 8px
@@ -148,40 +146,34 @@
         padding-bottom: 0px
               
 
-.pagOrderList-dataArea,.pagOrderList-dataTit--maxcom
+.pagEventList-dataArea,.pagEventList-dataTit--maxcom
     @include maxcom
         &:nth-child(1)
-            width: 80px
+            width: 600px
         &:nth-child(2)
-            width: 200px
+            width: 240px
         &:nth-child(3)
-            width: 150px
+            width: 270px
         &:nth-child(4)
-            width: 200px
+            width: 130px
         &:nth-child(5)
-            width: 180px
-        &:nth-child(6)
-            width: 180px
-        &:nth-child(7)
-            width: 180px
-        &:nth-child(8)
-            width: 200px
-.pagOrderList-dataArea--data
-.pagOrderList-btArea
+            width: 150px
+.pagEventList-dataArea--data
+.pagEventList-btArea
     width: 100%
     padding-top: 20px
     @include maxcom
         padding-top: 0px
 
 //手機專用形式
-.pagOrderList-dataArea--tit--phone
+.pagEventList-dataArea--tit--phone
     display: block
     min-width: 55px
     @include maxcom
         display: none
 
 //電腦專用形式
-.pagOrderList-dataArea--maxcom
+.pagEventList-dataArea--maxcom
     display: none
     opacity: 0
     @include maxcom
@@ -190,7 +182,7 @@
 
 
 //電腦專用tit
-.pagOrderList-dataTitArea--maxcom
+.pagEventList-dataTitArea--maxcom
     display: none
     @include maxcom
         padding: 25px 30px
@@ -202,7 +194,7 @@
         -webkit-overflow-scrolling: touch
         -ms-overflow-style: -ms-autohiding-scrollbar 
         align-items: center
-.pagOrderList-dataTit--maxcom
+.pagEventList-dataTit--maxcom
     color: $black
 
 
@@ -533,17 +525,18 @@
 //order-in.html
 .pagOrderInList-dataArea
     width: 100%
-    overflow-x: auto
-    padding: 25px 30px
+    // overflow-x: auto
+    // overflow-y: visible
+    // padding: 25px 30px
     display: flex
     //不知為何，現在要加display: -webkit-box，flex才會是設定的固定寬度
-    display: -webkit-box
-    flex-wrap: nowrap
-    -webkit-overflow-scrolling: touch
-    -ms-overflow-style: -ms-autohiding-scrollbar 
-    align-items: center
+    // display: -webkit-box
+    flex-wrap: wrap
+    // -webkit-overflow-scrolling: touch
+    // -ms-overflow-style: -ms-autohiding-scrollbar 
+    // align-items: center
     @include maxcom
-        padding: 25px 40px
+        // padding: 25px 40px
     @include maxcom-1920
         min-width: 100%
 
@@ -551,12 +544,12 @@
     display: flex
     flex-wrap: nowrap
     padding-right: 20px
-    &:nth-child(1)
-        width: 370px
-    &:nth-child(2)
-        width: 800px
-    &:nth-child(3)
-        width: 200px
+    // &:nth-child(1)
+    //     width: 370px
+    // &:nth-child(2)
+    //     width: 840px
+    // &:nth-child(3)
+    //     width: 160px
 
 .pagOrderIn-desArea
     padding: 25px 30px

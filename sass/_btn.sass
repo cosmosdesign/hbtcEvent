@@ -177,6 +177,11 @@
 	.btn-btn-circleRec--icon
 		margin-left: 20px
 		vertical-align: -3px
+	.btn-base--icon
+		position: relative
+		// right: 30px
+		top: 2px
+		padding-left: 10px
 	&:hover
 		text-decoration: none
 		color: #FFF
@@ -190,7 +195,6 @@
 
 .btnCurcleRec-LinearGradient--em
 	@include btn-circleRec($emColor-linearGradient135deg)
-
 .btnCurcleRec-LinearGradient--success--large
 	@include btn-circleRec($successColor-linearGradient90deg)
 	width: 200px
@@ -199,6 +203,9 @@
 		position: absolute
 		right: 30px
 		top: 20px
+.btnCurcleRec-secondColor
+	@include btn-circleRec($second-color)
+	
 
 
 /*圓形按鈕*/
@@ -227,6 +234,7 @@
 
 .btnCircleSecondColor
 	@include btn-circleBase($second-color)
+	
 
 .btnCircleWhiteColor
 	@include btn-circleBase(#FFF)

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="zh-TW" />
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!--css檔連結區-->
+    <link href="css/cssreset.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- semantic UI -->
+    <link href="css/semantic.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--js檔連結區-->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.md5.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <!-- i18n -->
+    <script src="i18n/jquery.i18n.js"></script>
+    <script src="i18n/jquery.i18n.messagestore.js"></script>
+    <script src="i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="i18n/jquery.i18n.language.js"></script>
+    <script src="i18n/jquery.i18n.parser.js"></script>
+    <script src="i18n/jquery.i18n.emitter.js"></script>
+    <script src="i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="i18n/i18n-config.js"></script>
+    <!-- 時間區間特效 -->
+    <!-- <link href="css/flatpickr.min.css" rel="stylesheet" type="text/css" media="all"> -->
+    <!-- <script src="js/flatpickr.js"></script> -->
+    <!-- 上傳圖片js -->
+    <!-- <link rel="stylesheet" href="dropify/css/dropify.min.css"> -->
+    <!-- <script src="dropify/js/dropify.min.js"></script>   -->
+    <!-- table sort特效 -->
+    <script src="js/table-sort.js"></script>
+    <!-- loading特效 -->
+    <link href="css/loader.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/jquery.nimble.loader.js"></script>
+    <!-- 設定檔 -->
+    <script src="js/config.js"></script>
+    <!-- 本頁js -->
+    <script src="js/js-order-in.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/web-js.js"></script>
+
+    <!-- banner特效 -->
+    <!-- <link href="vendor/Owl/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="vendor/Owl/owl.carousel.js"></script>
+    <script language="javascript">
+    $(document).ready(function() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 5000,
+            loop: false,
+            nav: true,
+            responsive: {
+                320: {
+                    items: 1
+                },
+                1024: {
+                    items: 2
+                },
+                1500: {
+                    items: 3
+                },
+                1900: {
+                    items: 4
+                }
+            }
+        })
+    })
+    </script> -->
+
+    <!-- 網站區layout -->
+    <link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+
+    <div class="jsNavMain">
+        <!-- main.js塞在裡面 -->
+    </div>
+    
+    <div class="patMainbody">
+        <!-- 麵包屑 -->
+        <div class="patBiteArea">
+            <a href="overview.html" class="patBiteBt">報名課程一覽</a>
+            <a href="#" class="patBiteBt patBiteBt--in">112年臺中市戒菸服務人員訓練－「基礎課程」</a>
+        </div>
+        <!-- 頁面大標 -->
+        <h1 class="patH1Tit patH1Tit">112年臺中市戒菸服務人員訓練－「基礎課程」</h1>
+
+        <div class="patPrimary">
+            <div class="pagSettingAddBk">
+                
+                <div class="eleCard mb-20">
+                    <!-- 課程相關資訊 -->
+                    <div class="gridBk mb-40">
+                        <section class="grid--25 fieldTitBk pt-30">
+                            <h2 class="eleSectionTit">課程相關資訊</h2>
+                        </section>
+                        <section class="grid--75 fieldBk pt-40">
+                            <div class="pagOrderInList-dataArea">
+                                <section class="modInfoBk-EminfoBk--lineDec">
+                                    <h6>課程日期與時間</h6>
+                                    <p class="typoText-20 typoGrayColor-200">
+                                        <img src="images/clock--gray--15.svg" alt="clock" class="eleTextinIcon">
+                                        2023/08/07 13:30
+                                    </p>
+                                </section>
+                                <section class="modInfoBk-EminfoBk--lineDec">
+                                    <h6>報名期間</h6>
+                                    <p class="typoText-20 typoGrayColor-200">
+                                        <img src="images/clock--gray--15.svg" alt="clock" class="eleTextinIcon">
+                                        2023/07/18 － 2023/08/02
+                                    </p>
+                                </section>
+                                <section class="modInfoBk-EminfoBk--lineDec">
+                                    <h6>課程名額</h6>
+                                    <p class="typoText-20 typoGrayColor-200">0 / 50</p>
+                                </section>
+                                <section class="modInfoBk-EminfoBk--lineDec">
+                                    <h6>課程費用</h6>
+                                    <p class="typoText-20 typoGrayColor-200">$ 0</p>
+                                </section>
+                                <div class="pagOrderInList-data pl-30">
+                                    <a href="eventdeclare.html" class="btnCircleMainColor mr-8" data-tooltip="報名課程" data-position="top center">
+                                        <img src="images/add--white--30.svg" alt="print" class="btn-circleBase--icon">
+                                    </a>
+                                    <a href="eventsearch.html" class="btnCircleSecondColor mr-5" data-tooltip="查詢/取消課程" data-position="top center">
+                                        <img src="images/search--white--30.svg" alt="edit" class="btn-circleBase--icon">
+                                    </a>
+                                </div>  
+                            </div>
+                            <section class="pt-40">
+                                <div class="modInfoBk-EminfoBk--info--textDes">
+                                    <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">會議地點</h6>
+                                    <p class="typo-contentIcon">
+                                        臺灣大道市政大樓惠中樓4F集會堂 <br />
+                                        臺中市西屯區台灣大道三段99號
+                                        <a class="typo-contentIcon--icon pl-10" href="https://www.google.com/maps?q=%E6%BD%AD%E5%AD%90%E5%8D%80%E8%B1%90%E8%88%88%E8%B7%AF1%E6%AE%B566%E8%99%9F" target="_blank" title="google map 連結">
+                                            <img src="images/pin--gray--30.svg" alt="google map" class="">
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="modInfoBk-EminfoBk--info--textDes">
+                                    <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">課程說明</h6>
+                                    <p>
+                                        112年第2梯次臺中市營業衛生管理人員繼續教育訓練 <br />
+                                        一、日期及時間：112年8月9日 (星期三)   10:30-16:30 <br />
+                                        二、地點：臺灣大道市政大樓惠中樓4F集會堂(臺中市西屯區台灣大道三段99號) <br />
+                                        三、參加人員：已領有臺中市營業衛生管理人員認證課程合格證明屆滿2年者 <br />
+                                        四、需攜帶物品：身分證、2吋照片一張(近一年內，彩色半身、正面、脫帽、五官清晰)。 <br />
+                                        五、報名方式：請先至臺中市政府衛生局線上報名系統完成報名（http://signup.hbtc.gov.tw，或直接網路搜尋「臺中市政府衛生局線上報名系統」），報名至8月4日截止；另講義採電子檔提供，將寄至報名時填寫之電子郵件信箱。
+                                    </p>
+                                </div>
+                                <div class="modInfoBk-EminfoBk--info--textDes">
+                                    <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">其他說明事項</h6>
+                                    <p>
+                                        講義採電子檔提供，將於開課前1周寄至報名時填寫之電子郵件信箱，請報名參訓學員務必注意來信。
+                                    </p>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <!-- 報名者相關資訊 -->
+                    <div class="gridBk eleSection--style--top">
+                        <section class="grid--25 fieldTitBk">
+                            <h2 class="eleSectionTit pb-40">報名者相關資訊</h2>
+                        </section>
+                        <section class="grid--75 fieldBk">
+                            <div class="modInfoBk-EminfoBk--info--textDes">
+                                <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">參加對象</h6>
+                                <p>
+                                    已領有臺中市營業衛生管理人員認證課程合格證明屆滿2年者
+                                </p>
+                            </div>
+                            <div class="modInfoBk-EminfoBk--info--textDes">
+                                <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">報名者資格審核</h6>
+                                <p>
+                                    不需要審核
+                                </p>
+                            </div>
+                            <div class="modInfoBk-EminfoBk--info--textDes">
+                                <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">是否供餐</h6>
+                                <p>
+                                    本課程不供餐
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- 課程聯絡人資訊 -->
+                    <div class="gridBk eleSection--style--top">
+                        <section class="grid--25 fieldTitBk">
+                            <h2 class="eleSectionTit pb-40">課程聯絡人資訊</h2>
+                        </section>
+                        <section class="grid--75 fieldBk">
+                            <div class="modInfoBk-EminfoBk--info--textDes">
+                                <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">聯絡人姓名</h6>
+                                <p>
+                                    馬雅芝
+                                </p>
+                            </div>
+                            <div class="modInfoBk-EminfoBk--info--textDes">
+                                <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">聯絡人電話</h6>
+                                <p>
+                                    04-25265394 #3533
+                                </p>
+                            </div>
+                            <div class="modInfoBk-EminfoBk--info--textDes">
+                                <h6 class="modInfoBk-EminfoBk--info--tit typoGrayColor-200 pr-20">聯絡人Email</h6>
+                                <a href="mailto:htbcm01161@taichung.gov.tw" class="typoMainColor">
+                                    htbcm01161@taichung.gov.tw
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!-- semantic UI -->
+    <script src="js/semantic.min.js"></script>
+    <!-- semantic UI 初始化 js -->
+    <script src="js/semantic-ini.js"></script>
+    <!-- table sort 初始化 js -->
+    <script src="js/tableSort-ini.js"></script>
+    <!-- dropify 初始化 js -->
+    <!-- <script src="js/dropify-ini.js"></script> -->
+    <!-- 時間 jsdelivr特效 -->
+    <!-- <script>
+        $(".selector").flatpickr({
+            //設定時間
+            altInput: true,
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d"
+
+        });
+    </script> -->
+    
+    
+    <script>
+        // 時間 jsdelivr特效
+        // $(".selector").flatpickr({
+        //     //設定時間
+        //     altInput: true,
+        //     altFormat: "F j, Y",
+        //     dateFormat: "Y-m-d",
+        //     defaultDate: "2020-06-05",
+        //     inline: true,
+        //     // noCalendar: true,
+        //     onDayCreate: function(dObj, dStr, fp, dayElem){
+        //         // Utilize dayElem.dateObj, which is the corresponding Date
+        //         // dummy logic
+        //         if (Math.random() < 0.15)
+        //             dayElem.innerHTML += "<span class='calEvent'></span>";
+        //         // else if (Math.random() > 0.85)
+        //         //     dayElem.innerHTML += "<div class='status'><span class='busy'></span></div>";
+        //     }    
+        // });
+        // $('.flatpickr-input:visible').prop('readonly', false);
+
+        /*首頁news tab 切換特效*/
+        // $( document ).on( "click", ".jsTabBt", function(){
+        //     var get_class = $(this).prop("id");
+        //     var get_class_number = get_class.split("-");
+        //     var class_number = get_class_number[1];
+        //     var get_bt_id = "#" + "jsTabBtId-" + class_number;
+        //     var get_id = "#" + "jsTabId-" + class_number;
+        
+        //     $(".jsTabBt").removeClass("eleTab--in--newsTab");
+        //     $(".jsTabContent").hide();
+        //     $(get_bt_id).addClass("eleTab--in--newsTab");
+        //     $(get_id).show();
+
+        // });
+    </script>
+  
+
+</body>
+</html>

@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*載入檔案區*/
-/*斷點設置*/
+/*載入檔案區*/ /*斷點設置*/
 /*列印用*/
 /*列印用裡面生效的css*/
 /*列印時設定邊界用*/
@@ -66,16 +65,16 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
 }
 
-h6, p {
+h6, p, div {
   letter-spacing: 0.5px;
   font-size: 1.0625rem;
 }
 @media all and (min-width: 78em) {
-  h6, p {
+  h6, p, div {
     font-size: 1.125rem;
   }
 }
-h6 .icon, p .icon {
+h6 .icon, p .icon, div .icon {
   vertical-align: -2px;
 }
 
@@ -127,6 +126,10 @@ h6 .icon, p .icon {
   font-size: 1.38rem;
 }
 
+.typoText-32 {
+  font-size: 2rem;
+}
+
 .typoText-34 {
   font-size: 2.13rem;
 }
@@ -147,6 +150,17 @@ h6 .icon, p .icon {
 
 .typoDecUnderLine {
   text-decoration: underline;
+}
+
+.typo-contentIcon {
+  display: table;
+}
+
+.typo-contentIcon--icon {
+  vertical-align: middle;
+}
+.typo-contentIcon--icon:hover, .typo-contentIcon--icon:active, .typo-contentIcon--icon:focus {
+  opacity: 0.64;
 }
 
 /*排版設定*/
@@ -282,6 +296,11 @@ h6 .icon, p .icon {
   width: 100%;
 }
 
+.grid--alignSelf--flexEnd {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 /*基底通用設定*/
 body {
   font-size: 100%;
@@ -361,7 +380,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-  background: #0066ff;
+  background: rgb(0, 102, 255);
   border-radius: 4px;
   -webkit-box-shadow: 0 0 10px rgba(34, 34, 34, 0.12);
           box-shadow: 0 0 10px rgba(34, 34, 34, 0.12);
@@ -413,6 +432,12 @@ progress[value]::-webkit-progress-value {
 
 .db {
   display: block;
+}
+
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .textalign-center {
@@ -825,8 +850,8 @@ progress[value]::-webkit-progress-value {
   padding: 0 20px;
   line-height: 47px;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#6482c6), to(#3b6bba));
-  background: linear-gradient(0deg, #6482c6, #3b6bba);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(100, 130, 198)), to(rgb(59, 107, 186)));
+  background: linear-gradient(0deg, rgb(100, 130, 198), rgb(59, 107, 186));
   color: #FFF;
   font-family: "Montserrat-Medium", sans-serif, NotoSansTC-Medium, sans-serif;
   font-size: 0.9375rem;
@@ -885,7 +910,7 @@ progress[value]::-webkit-progress-value {
   padding: 0 20px;
   line-height: 47px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #00e5ff, #18ffff);
+  background: linear-gradient(135deg, rgb(0, 229, 255), rgb(24, 255, 255));
   color: #FFF;
   font-family: "Montserrat-Medium", sans-serif, NotoSansTC-Medium, sans-serif;
   font-size: 0.9375rem;
@@ -943,7 +968,7 @@ progress[value]::-webkit-progress-value {
   padding: 0 20px;
   line-height: 47px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #6200ea, #1976d2);
+  background: linear-gradient(135deg, rgb(98, 0, 234), rgb(25, 118, 210));
   color: #FFF;
   font-family: "Montserrat-Medium", sans-serif, NotoSansTC-Medium, sans-serif;
   font-size: 0.9375rem;
@@ -1002,8 +1027,8 @@ progress[value]::-webkit-progress-value {
   padding: 0 20px;
   line-height: 47px;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#6482c6), to(#3b6bba));
-  background: linear-gradient(0deg, #6482c6, #3b6bba);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(100, 130, 198)), to(rgb(59, 107, 186)));
+  background: linear-gradient(0deg, rgb(100, 130, 198), rgb(59, 107, 186));
   color: #FFF;
   font-family: "Montserrat-Medium", sans-serif, NotoSansTC-Medium, sans-serif;
   font-size: 0.9375rem;
@@ -1223,7 +1248,7 @@ progress[value]::-webkit-progress-value {
   display: inline-block;
   display: inline-block;
   width: auto;
-  background: linear-gradient(135deg, #6200ea, #1976d2);
+  background: linear-gradient(135deg, rgb(98, 0, 234), rgb(25, 118, 210));
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
@@ -1263,6 +1288,11 @@ progress[value]::-webkit-progress-value {
   margin-left: 20px;
   vertical-align: -3px;
 }
+.btnCurcleRec-LinearGradient--em .btn-base--icon {
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
 .btnCurcleRec-LinearGradient--em:hover {
   text-decoration: none;
   color: #FFF;
@@ -1287,8 +1317,8 @@ progress[value]::-webkit-progress-value {
   display: inline-block;
   display: inline-block;
   width: auto;
-  background: -webkit-gradient(linear, left top, right top, from(#00eb08), to(#80ff84));
-  background: linear-gradient(90deg, #00eb08, #80ff84);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 235, 8)), to(rgb(128, 255, 132)));
+  background: linear-gradient(90deg, rgb(0, 235, 8), rgb(128, 255, 132));
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
@@ -1330,6 +1360,11 @@ progress[value]::-webkit-progress-value {
   margin-left: 20px;
   vertical-align: -3px;
 }
+.btnCurcleRec-LinearGradient--success--large .btn-base--icon {
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
 .btnCurcleRec-LinearGradient--success--large:hover {
   text-decoration: none;
   color: #FFF;
@@ -1346,6 +1381,75 @@ progress[value]::-webkit-progress-value {
   position: absolute;
   right: 30px;
   top: 20px;
+}
+
+.btnCurcleRec-secondColor {
+  font-family: "Montserrat-Medium", sans-serif, "NotoSansTC-Regular", sans-serif, "Microsoft JhengHei";
+  font-size: 1.0625rem;
+  color: #0F172A;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 12px 22px rgba(210, 211, 216, 0.8);
+          box-shadow: 0px 12px 22px rgba(210, 211, 216, 0.8);
+  display: inline-block;
+  display: inline-block;
+  width: auto;
+  background: #5DD0FC;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  text-transform: capitalize;
+  font-size: 0.9375rem;
+  font-family: "NotoSansTC-Medium";
+  color: #FFF;
+  padding: 0 20px 0 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btnCurcleRec-secondColor:hover {
+  -webkit-box-shadow: 0px 14px 26px rgba(200, 201, 206, 0.8);
+          box-shadow: 0px 14px 26px rgba(200, 201, 206, 0.8);
+}
+.btnCurcleRec-secondColor:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.btnCurcleRec-secondColor:active {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.btnCurcleRec-secondColor:focus {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+@media all and (min-width: 48em) {
+  .btnCurcleRec-secondColor {
+    height: 56px;
+    line-height: 55px;
+    border-radius: 28px;
+    font-size: 1.0625rem;
+  }
+}
+.btnCurcleRec-secondColor .btn-btn-circleRec--icon {
+  margin-left: 20px;
+  vertical-align: -3px;
+}
+.btnCurcleRec-secondColor .btn-base--icon {
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
+.btnCurcleRec-secondColor:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+.btnCurcleRec-secondColor:active {
+  text-decoration: none;
+  color: #FFF;
+}
+.btnCurcleRec-secondColor:focus {
+  text-decoration: none;
+  color: #FFF;
 }
 
 /*圓形按鈕*/
@@ -1458,7 +1562,7 @@ progress[value]::-webkit-progress-value {
   height: 48px;
   line-height: 48px;
   border-radius: 48px;
-  background: linear-gradient(135deg, #6200ea, #1976d2);
+  background: linear-gradient(135deg, rgb(98, 0, 234), rgb(25, 118, 210));
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   text-align: center;
@@ -1938,6 +2042,11 @@ label {
   vertical-align: -7px;
 }
 
+.eleReCAPTCHA {
+  height: 52px;
+  border-radius: 12px;
+}
+
 .eleCard {
   width: 100%;
   background: #FFF;
@@ -1970,10 +2079,6 @@ label {
 }
 .eleSection--style:first-of-type {
   padding-top: 0px;
-}
-.eleSection--style:last-of-type {
-  border-bottom: none;
-  padding-bottom: 0px;
 }
 
 .eleSection--style--bottom {
@@ -2148,7 +2253,7 @@ label {
   text-decoration: none;
 }
 .eleTab--ori:hover::after, .eleTab--ori--newsTab:hover::after, .eleTab--in:hover::after, .eleTab--in--newsTab:hover::after {
-  background: linear-gradient(135deg, #00e5ff, #18ffff);
+  background: linear-gradient(135deg, rgb(0, 229, 255), rgb(24, 255, 255));
   width: 100%;
 }
 .eleTab--ori::before, .eleTab--ori--newsTab::before, .eleTab--in::before, .eleTab--in--newsTab::before {
@@ -2170,7 +2275,7 @@ label {
 }
 .eleTab--in::after {
   width: 100%;
-  background: linear-gradient(135deg, #00e5ff, #18ffff);
+  background: linear-gradient(135deg, rgb(0, 229, 255), rgb(24, 255, 255));
 }
 
 .eleTab--ori--newsTab a {
@@ -2627,12 +2732,12 @@ label {
 
 .eleColorLabel--lightinfo {
   color: #1976D2;
-  background: #0066ff;
+  background: rgb(0, 102, 255);
 }
 
 .eleColorLabel--info {
   color: #FFF;
-  background: #0066ff;
+  background: rgb(0, 102, 255);
 }
 
 .eleColorLabel--lightgray {
@@ -3291,8 +3396,8 @@ label {
 .patSysInfo-userInfoBt {
   width: 38px;
   height: 38px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#18ffff), to(#00e5ff));
-  background: linear-gradient(180deg, #18ffff, #00e5ff);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(24, 255, 255)), to(rgb(0, 229, 255)));
+  background: linear-gradient(180deg, rgb(24, 255, 255), rgb(0, 229, 255));
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.3125rem;
@@ -3489,6 +3594,15 @@ label {
   overflow-y: auto;
   background: #FFF;
   padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media all and (min-width: 78em) {
   .patSmlNav {
@@ -3519,12 +3633,22 @@ label {
   width: 70px;
   margin-bottom: 10px;
 }
+@media all and (min-width: 48em) {
+  .patSmlNav-LogoNameBk--logo {
+    width: 100px;
+  }
+}
 
 .patSmlNav-LogoNameBk--name {
   font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   color: #575A6A;
   margin-bottom: 50px;
+}
+@media all and (min-width: 48em) {
+  .patSmlNav-LogoNameBk--name {
+    font-size: 1.1875rem;
+  }
 }
 
 .patSmlNavopen_bg {
@@ -3539,7 +3663,7 @@ label {
 
 .patNavMenu {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .patNavMenu-list {
@@ -3554,7 +3678,7 @@ label {
   color: #0F172A;
   line-height: 1.8;
   letter-spacing: 0.5px;
-  color: #B6C5DA;
+  color: #A4B7D1;
   font-family: "NotoSansTC-Medium";
   font-size: 1.125rem;
   letter-spacing: 1.5px;
@@ -3588,8 +3712,8 @@ label {
   color: #0F172A;
 }
 .patNavMenu-list--active .patNavMenu-iconArea {
-  background: -webkit-gradient(linear, left bottom, left top, from(#6200ea), to(#1976d2));
-  background: linear-gradient(0deg, #6200ea, #1976d2);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(98, 0, 234)), to(rgb(25, 118, 210)));
+  background: linear-gradient(0deg, rgb(98, 0, 234), rgb(25, 118, 210));
   border-radius: 18px;
 }
 .patNavMenu-list--active .patNavMenu-iconArea .patNavMenu-icon {
@@ -3615,8 +3739,8 @@ label {
   padding: 20px 30px;
   position: relative;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6200ea), to(#1976d2));
-  background: linear-gradient(180deg, #6200ea, #1976d2);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(98, 0, 234)), to(rgb(25, 118, 210)));
+  background: linear-gradient(180deg, rgb(98, 0, 234), rgb(25, 118, 210));
   display: inline-block;
 }
 .patNavOrderBt:hover {
@@ -3654,13 +3778,21 @@ label {
   opacity: 0.64;
 }
 
+.patNavCopyright {
+  position: absolute;
+  bottom: 50px;
+  font-size: 1rem;
+  font-family: "NotoSansTC-Regular";
+  color: #A4B7D1;
+}
+
 /* 電腦視口header*/
 .patMainbody {
   width: 100%;
 }
 @media all and (min-width: 78em) {
   .patMainbody {
-    width: calc( 100% - 320px );
+    width: calc(100% - 320px);
     margin-left: 320px;
   }
 }
@@ -3681,7 +3813,7 @@ label {
 @media all and (min-width: 78em) {
   .patBiteArea {
     display: inline-block;
-    width: 40%;
+    width: 100%;
     margin: 50px 0 0 0;
     padding: 0 50px;
   }
@@ -3689,8 +3821,8 @@ label {
 
 .patBiteBt {
   font-size: 1.0625rem;
-  color: #A4B7D1;
-  letter-spacing: 1px;
+  color: #1976D2;
+  letter-spacing: 0.5px;
   line-height: 1.5em;
   position: relative;
   display: inline-block;
@@ -3698,7 +3830,8 @@ label {
   margin: 0 30px 0 0;
 }
 .patBiteBt:hover, .patBiteBt:active, .patBiteBt:focus {
-  color: #A4B7D1;
+  color: #7E818D;
+  text-decoration: none;
 }
 .patBiteBt::after {
   background: url(../images/arrow-right--gray--15.svg) no-repeat;
@@ -3711,6 +3844,14 @@ label {
 }
 .patBiteBt:last-of-type:after {
   background: none;
+}
+
+.patBiteBt--in {
+  color: #7E818D;
+}
+.patBiteBt--in:hover, .patBiteBt--in:active, .patBiteBt--in:focus {
+  color: #7E818D;
+  text-decoration: none;
 }
 
 .patH1Tit.patH1Tit {
@@ -4114,8 +4255,8 @@ label {
   padding: 0 20px;
   line-height: 47px;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6200ea), to(#1976d2));
-  background: linear-gradient(180deg, #6200ea, #1976d2);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(98, 0, 234)), to(rgb(25, 118, 210)));
+  background: linear-gradient(180deg, rgb(98, 0, 234), rgb(25, 118, 210));
   color: #FFF;
   font-family: "Montserrat-Medium", sans-serif, NotoSansTC-Medium, sans-serif;
   font-size: 0.9375rem;
@@ -4268,7 +4409,7 @@ label {
   text-align: right;
 }
 .calEventList .calEventList-infoBk .calEventList-infoBk--endTime, .calEventList--project .calEventList-infoBk .calEventList-infoBk--endTime, .calEventList--meeting .calEventList-infoBk .calEventList-infoBk--endTime {
-  color: #0066ff;
+  color: rgb(0, 102, 255);
   opacity: 0.6;
   font-weight: 500;
 }
@@ -4284,10 +4425,10 @@ label {
 }
 
 .calEventList--project .calEventList-infoBk {
-  background: #0066ff;
+  background: rgb(0, 102, 255);
 }
 .calEventList--project .calEventList-infoBk--startTime {
-  color: #0066ff;
+  color: rgb(0, 102, 255);
 }
 .calEventList--project .calEventList-infoBk--listContent {
   color: #575A6A;
@@ -4297,10 +4438,10 @@ label {
   background: #1976D2;
 }
 .calEventList--meeting .calEventList-infoBk--startTime {
-  color: #ff9e81 !important;
+  color: rgb(255, 158, 129) !important;
 }
 .calEventList--meeting .calEventList-infoBk--endTime {
-  color: #ff9e81 !important;
+  color: rgb(255, 158, 129) !important;
   opacity: 0.6;
 }
 .calEventList--meeting .calEventList-infoBk--listTit {
@@ -4447,7 +4588,7 @@ label {
 }
 
 .modInfoBk-EminfoBk--info--data {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", "NotoSansTC-Medium";
 }
 
 .modInfoBk-EminfoBk--info--textDes {
@@ -4467,13 +4608,16 @@ label {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
 }
+.modInfoBk-EminfoBk--info--textDes:nth-of-type(2n) {
+  background: #FFF;
+}
 @media all and (min-width: 115em) {
   .modInfoBk-EminfoBk--info--textDes {
     padding: 12px 40px;
   }
 }
 .modInfoBk-EminfoBk--info--textDes .modInfoBk-EminfoBk--info--tit {
-  min-width: 110px;
+  min-width: 140px;
 }
 
 .modInfoBk-EminfoBk--info:last-of-type {
@@ -4482,8 +4626,14 @@ label {
 
 .modInfoBk-EminfoBk--lineDec {
   border-left: 2px solid #E1E5F4;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 15px;
+}
+@media all and (min-width: 115em) {
+  .modInfoBk-EminfoBk--lineDec {
+    margin: 0px;
+  }
 }
 .modInfoBk-EminfoBk--lineDec:last-of-type {
   border-right: 2px solid #E1E5F4;
@@ -4620,7 +4770,7 @@ label {
 }
 
 @media all and (min-width: 78em) {
-  .pagOrderListBk {
+  .pagEventListBk {
     width: auto;
     padding-left: 12px;
     padding-right: 12px;
@@ -4629,12 +4779,12 @@ label {
   }
 }
 
-.pagOrderList {
+.pagEventList {
   padding: 30px;
   border-bottom: 1px solid #E1E5F4;
 }
 @media all and (min-width: 78em) {
-  .pagOrderList {
+  .pagEventList {
     width: auto;
     border-bottom: none;
     min-width: 200%;
@@ -4642,43 +4792,42 @@ label {
     background: #F7FAFF;
     border-radius: 8px;
   }
-  .pagOrderList:nth-of-type(2n) {
+  .pagEventList:nth-of-type(2n) {
     background: #FFF;
   }
 }
 @media all and (min-width: 115em) {
-  .pagOrderList {
+  .pagEventList {
     min-width: 100%;
   }
 }
 
-.pagOrderList-tit--phone {
+.pagEventList-tit--phone {
   width: 100%;
   font-size: 0.88rem;
   font-family: "NotoSansTC-Regular", sans-serif;
 }
 @media all and (min-width: 78em) {
-  .pagOrderList-tit--phone {
+  .pagEventList-tit--phone {
     display: none;
   }
 }
 
-.pagOrderList-statusOrder--phone {
+.pagEventList-statusOrder--phone {
   width: 100%;
 }
 @media all and (min-width: 78em) {
-  .pagOrderList-statusOrder--phone {
+  .pagEventList-statusOrder--phone {
     display: none;
   }
 }
 
-.pagOrderList-statusOrder--phone--text {
-  font-size: 1.5rem;
-  font-family: "Montserrat-Regular";
+.pagEventList-statusOrder--phone--text {
+  font-size: 1.25rem;
+  font-family: "NotoSansTC-Medium";
   color: #1976D2;
-  text-decoration: underline;
 }
-.pagOrderList-statusOrder--phone--text img {
+.pagEventList-statusOrder--phone--text img {
   width: 30px;
   height: 30px;
   margin: 0 12px 0 0;
@@ -4686,7 +4835,7 @@ label {
 }
 
 @media all and (min-width: 78em) {
-  .pagOrderList--maxcomBk {
+  .pagEventList--maxcomBk {
     display: -ms-flexbox;
     display: flex;
     display: -webkit-box;
@@ -4700,17 +4849,17 @@ label {
   }
 }
 
-.modPhineCardMaxcomTable-dataArea {
+.modPhoneCardMaxcomTable-dataArea {
   width: 100%;
   border-bottom: 1px solid #E1E5F4;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.modPhineCardMaxcomTable-dataArea:last-of-type {
+.modPhoneCardMaxcomTable-dataArea:last-of-type {
   border-bottom: none;
 }
 @media all and (min-width: 78em) {
-  .modPhineCardMaxcomTable-dataArea {
+  .modPhoneCardMaxcomTable-dataArea {
     border-bottom: none;
     padding-right: 20px;
     padding-top: 0px;
@@ -4719,68 +4868,59 @@ label {
 }
 
 @media all and (min-width: 78em) {
-  .pagOrderList-dataArea:nth-child(1), .pagOrderList-dataTit--maxcom:nth-child(1) {
-    width: 80px;
+  .pagEventList-dataArea:nth-child(1), .pagEventList-dataTit--maxcom:nth-child(1) {
+    width: 600px;
   }
-  .pagOrderList-dataArea:nth-child(2), .pagOrderList-dataTit--maxcom:nth-child(2) {
-    width: 200px;
+  .pagEventList-dataArea:nth-child(2), .pagEventList-dataTit--maxcom:nth-child(2) {
+    width: 240px;
   }
-  .pagOrderList-dataArea:nth-child(3), .pagOrderList-dataTit--maxcom:nth-child(3) {
+  .pagEventList-dataArea:nth-child(3), .pagEventList-dataTit--maxcom:nth-child(3) {
+    width: 270px;
+  }
+  .pagEventList-dataArea:nth-child(4), .pagEventList-dataTit--maxcom:nth-child(4) {
+    width: 130px;
+  }
+  .pagEventList-dataArea:nth-child(5), .pagEventList-dataTit--maxcom:nth-child(5) {
     width: 150px;
-  }
-  .pagOrderList-dataArea:nth-child(4), .pagOrderList-dataTit--maxcom:nth-child(4) {
-    width: 200px;
-  }
-  .pagOrderList-dataArea:nth-child(5), .pagOrderList-dataTit--maxcom:nth-child(5) {
-    width: 180px;
-  }
-  .pagOrderList-dataArea:nth-child(6), .pagOrderList-dataTit--maxcom:nth-child(6) {
-    width: 180px;
-  }
-  .pagOrderList-dataArea:nth-child(7), .pagOrderList-dataTit--maxcom:nth-child(7) {
-    width: 180px;
-  }
-  .pagOrderList-dataArea:nth-child(8), .pagOrderList-dataTit--maxcom:nth-child(8) {
-    width: 200px;
   }
 }
 
-.pagOrderList-btArea {
+.pagEventList-btArea {
   width: 100%;
   padding-top: 20px;
 }
 @media all and (min-width: 78em) {
-  .pagOrderList-btArea {
+  .pagEventList-btArea {
     padding-top: 0px;
   }
 }
 
-.pagOrderList-dataArea--tit--phone {
+.pagEventList-dataArea--tit--phone {
   display: block;
   min-width: 55px;
 }
 @media all and (min-width: 78em) {
-  .pagOrderList-dataArea--tit--phone {
+  .pagEventList-dataArea--tit--phone {
     display: none;
   }
 }
 
-.pagOrderList-dataArea--maxcom {
+.pagEventList-dataArea--maxcom {
   display: none;
   opacity: 0;
 }
 @media all and (min-width: 78em) {
-  .pagOrderList-dataArea--maxcom {
+  .pagEventList-dataArea--maxcom {
     opacity: 1;
     display: block;
   }
 }
 
-.pagOrderList-dataTitArea--maxcom {
+.pagEventList-dataTitArea--maxcom {
   display: none;
 }
 @media all and (min-width: 78em) {
-  .pagOrderList-dataTitArea--maxcom {
+  .pagEventList-dataTitArea--maxcom {
     padding: 25px 30px;
     display: -ms-flexbox;
     display: flex;
@@ -4795,7 +4935,7 @@ label {
   }
 }
 
-.pagOrderList-dataTit--maxcom {
+.pagEventList-dataTit--maxcom {
   color: #0F172A;
 }
 
@@ -5267,23 +5407,11 @@ label {
 
 .pagOrderInList-dataArea {
   width: 100%;
-  overflow-x: auto;
-  padding: 25px 30px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-box;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media all and (min-width: 78em) {
-  .pagOrderInList-dataArea {
-    padding: 25px 40px;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media all and (min-width: 115em) {
   .pagOrderInList-dataArea {
@@ -5298,15 +5426,6 @@ label {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding-right: 20px;
-}
-.pagOrderInList-data:nth-child(1) {
-  width: 370px;
-}
-.pagOrderInList-data:nth-child(2) {
-  width: 800px;
-}
-.pagOrderInList-data:nth-child(3) {
-  width: 200px;
 }
 
 .pagOrderIn-desArea {
