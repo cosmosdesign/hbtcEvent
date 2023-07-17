@@ -19,20 +19,29 @@ let NavContent = `
         </div>
         <section class="patNavMenu">
             <ul class="jsfirst-level-area">
-                <a href="overview.html" class="patNavMenu-list patNavMenu-list--active " title="報名課程一覽">
+                <a href="index.html" class="patNavMenu-list patNavMenu-list--active " title="系統總覽頁">
                     <div class="patNavMenu-iconArea">
-                        <img class="patNavMenu-icon" src="images/nav-event--gray.svg" alt="報名課程一覽" >
+                        <img class="patNavMenu-icon" src="images/nav-home--gray.svg" alt="系統總覽頁" >
                     </div>
-                    報名課程一覽
+                    系統總覽頁
                 </a>
                 <div class="clear"></div>
             </ul>
             <ul class="jsfirst-level-area">
-                <a href="materials.html" class="patNavMenu-list" title="課程消息一覽">
+                <a href="eventli.html" class="patNavMenu-list " title="報名活動一覽">
                     <div class="patNavMenu-iconArea">
-                        <img class="patNavMenu-icon" src="images/nav-news--gray.svg" alt="課程消息一覽" >
+                        <img class="patNavMenu-icon" src="images/nav-event--gray.svg" alt="報名活動一覽" >
                     </div>
-                    課程消息一覽
+                    報名活動一覽
+                </a>
+                <div class="clear"></div>
+            </ul>
+            <ul class="jsfirst-level-area">
+                <a href="newsli.html" class="patNavMenu-list" title="活動消息一覽">
+                    <div class="patNavMenu-iconArea">
+                        <img class="patNavMenu-icon" src="images/nav-news--gray.svg" alt="活動消息一覽" >
+                    </div>
+                    活動消息一覽
                 </a>
                 <div class="clear"></div>
             </ul>

@@ -17,9 +17,10 @@
 
 
 h1,h2,h3,h4,h5,h6,p
-	margin: 0 0 0 0	
+	margin: 0 0 0 0		
 	@include typoBasic
 	font-weight: normal
+	// word-break: break-all
 
 
 h6,p,div
@@ -97,3 +98,6 @@ h6,p,div
 	vertical-align: middle
 	&:hover,&:active,&:focus
 		opacity: 0.64
+
+.typo-wordBreak--all
+	word-break: break-all

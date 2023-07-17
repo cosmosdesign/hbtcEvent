@@ -10,12 +10,12 @@ FullCalendar.globalLocales.push(function () {
       month: '月',
       week: '週',
       day: '天',
-      list: '課程列表',
+      list: '活動列表',
     },
     weekText: '周',
     allDayText: '整天',
     moreLinkText: '顯示更多',
-    noEventsText: '没有任何課程',
+    noEventsText: '没有任何活動',
   };
 
   return zhTw;

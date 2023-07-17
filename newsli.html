@@ -39,7 +39,7 @@
     <!-- 設定檔 -->
     <script src="js/config.js"></script>
     <!-- 本頁js -->
-    <script src="js/js-inventories-in.js"></script>
+    <script src="js/js-setting.js"></script>
     <script src="js/main.js"></script>
     <script src="js/web-js.js"></script>
 
@@ -84,90 +84,92 @@
     <div class="patMainbody">
         <!-- 麵包屑 -->
         <div class="patBiteArea">
-            <a href="overview.html" class="patBiteBt">首頁</a>
-            <a href="inventories.html" class="patBiteBt">庫存管理</a>
-            <a href="inventories-in.html" class="patBiteBt">庫存內容</a>
+            <a href="newsli.html" class="patBiteBt patBiteBt--in">活動消息一覽</a>
         </div>
         <!-- 頁面大標 -->
-        <h1 class="patH1Tit patH1Tit">匯入原料</h1>
-
+        <h1 class="patH1Tit patH1Tit">活動消息一覽</h1>
         <div class="patPrimary">
-            <div class="pagSettingAddBk">
-                <!-- 一個庫存 -->
-                <div class="eleCard mb-20">
-                    <section class="pagInvList-dataArea">
-                        <div class="pagInvtList-data">
-                            <div class="modInfoBk-EminfoBk--info mt-10">
-                                <h6 class="modInfoBk-EminfoBk--info--tit">原物料批號</h6>
-                                    <a href="inventories-in.html" class="typoText-34 typoMainColor modInfoBk-EminfoBk--info--data typoDecUnderLine btnHoverAct">
-                                        A202201062001
+
+            <!-- news列表 -->
+            <div class="patListBk">
+                <div class="eleCard">
+                    <div class="modTableListBk">
+                        <div class="pagNewsList-dataTitArea">
+                            <h5 class="eleDataTit pagNewsList-dataTit">標題</h5>
+                            <h5 class="eleDataTit pagNewsList-dataTit">發佈日期</h5>
+                            <h5 class="eleDataTit pagNewsList-dataTit">發佈人</h5>
+                        </div>
+                        <span>
+                            <!-- 一個news -->
+                            <ul class="pagNewsList-dataArea">
+                                <li class="pagNewsList-data">
+                                    <a href="newsin.html">
+                                        <h3 class="pagEventList-statusOrder--phone--text">
+                                            112年臺中市戒菸服務人員訓練-「基礎活動」課前講義檔案下載
+                                        </h3>
                                     </a>
-                            </div>
-                        </div>
-                        <div class="pagInvtList-data">
-                            <div class="modInfoBk-EminfoBk--info mt-10">
-                                <h6 class="modInfoBk-EminfoBk--info--tit">原料名稱</h6>
-                                <p class="typoText-34 typoSecondColor modInfoBk-EminfoBk--info--data typoDecUnderLine">SH-011-111</p>
-                            </div>
-                        </div>
-                        <div class="pagInvtList-data">
-                            <section class="modInfoBk-EminfoBk--lineDec">
-                                <h6>進貨數量</h6>
-                                <p class="typoText-22 typoGrayColor-200">11.9000 KG</p>
-                            </section>
-                            <section class="modInfoBk-EminfoBk--lineDec">
-                                <h6>剩餘數量</h6>
-                                <p class="typoText-22 typoGrayColor-200">10.0000 KG</p>
-                            </section>
-                        </div>
-                        <div class="pagInvtList-data">
-                            <a href="inventories-edit.html" class="btnCircleSecondColor mr-5">
-                                <img src="images/pen--white--30.svg" alt="edit" class="btn-circleBase--icon">
-                            </a>
-                            <a href="javascript:void(0);" class="btnCircleWhiteColor mr-5">
-                                <img src="images/trash--gray--30.svg" alt="delete" class="btn-circleBase--icon">
-                            </a>
-                        </div>  
-                    </section>
-                    
-                    <form action="" autocomplete="off">
-                        <div class="gridBk eleSection--style--top">
-                            <section class="grid--33 fieldTitBk">
-                                <h2 class="eleSectionTit pb-30">添加物列表</h2>
-                            </section>
-                            <section class="grid--66 fieldBk">
-                                <div class="ui form">
-                                    <div class="modTableListBk">
-                                        <div class="pagInvEditList-dataTitArea">
-                                            <h5 class="eleDataTit pagInvEditList-dataTit">原料名稱</h5>
-                                            <h5 class="eleDataTit pagInvEditList-dataTit">批量用量 (KG)</h5>
-                                        </div>
-                                        <span>
-                                            <!-- 一個原料 -->
-                                            <ul class="pagInvEditList-dataArea">
-                                                <li class="pagInvEditList-data">
-                                                    <p>AA108015002</p>
-                                                </li> 
-                                                <li class="pagInvEditList-data">
-                                                    <p>11</p>
-                                                </li>  
-                                            </ul>
-                                            <!-- 一個原料 -->
-                                            <ul class="pagInvEditList-dataArea">
-                                                <li class="pagInvEditList-data">
-                                                    <p>AA108015002</p>
-                                                </li> 
-                                                <li class="pagInvEditList-data">
-                                                    <p>11</p>
-                                                </li>  
-                                            </ul>
-                                        </span>      
-                                </div>
-                        </div>
-                    </form>
+                                </li>  
+                                <li class="pagNewsList-data">
+                                    <p class="eleData typoGrayColor-200">
+                                        <img src="images/clock--gray--15.svg" alt="clock" class="eleTextinIcon">
+                                        2023 / 08 / 07
+                                    </p>
+                                </li>  
+                                <li class="eleData pagNewsList-data typoGrayColor-200">
+                                    <p>
+                                        馬雅芝
+                                    </p>
+                                </li>  
+                            </ul>
+                            <!-- 一個news -->
+                            <ul class="pagNewsList-dataArea">
+                                <li class="pagNewsList-data">
+                                    <a href="newsin.html">
+                                        <h3 class="pagEventList-statusOrder--phone--text">
+                                            112年臺中市戒菸服務人員訓練-「基礎活動」課前講義檔案下載
+                                        </h3>
+                                    </a>
+                                </li>  
+                                <li class="pagNewsList-data">
+                                    <p class="eleData typoGrayColor-200">
+                                        <img src="images/clock--gray--15.svg" alt="clock" class="eleTextinIcon">
+                                        2023 / 08 / 07
+                                    </p>
+                                </li>  
+                                <li class="eleData pagNewsList-data typoGrayColor-200">
+                                    <p>
+                                        馬雅芝
+                                    </p>
+                                </li>  
+                            </ul>
+                            <!-- 一個news -->
+                            <ul class="pagNewsList-dataArea">
+                                <li class="pagNewsList-data">
+                                    <a href="newsin.html">
+                                        <h3 class="pagEventList-statusOrder--phone--text">
+                                            112年臺中市戒菸服務人員訓練-「基礎活動」
+                                        </h3>
+                                    </a>
+                                </li>  
+                                <li class="pagNewsList-data">
+                                    <p class="eleData typoGrayColor-200">
+                                        <img src="images/clock--gray--15.svg" alt="clock" class="eleTextinIcon">
+                                        2023 / 08 / 07
+                                    </p>
+                                </li>  
+                                <li class="eleData pagNewsList-data typoGrayColor-200">
+                                    <p>
+                                        馬雅芝
+                                    </p>
+                                </li>  
+                            </ul>
+                                   
+                        </span>
+                    </div>
                 </div>
-                
             </div>
+            
+
             <div class="clear"></div>
         </div>
     </div>

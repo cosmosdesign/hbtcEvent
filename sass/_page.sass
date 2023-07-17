@@ -1,5 +1,5 @@
 //頁面畫面
-//overview.html
+//index.html
 .pagOverDataSection
     width: 100%
     @include ipad
@@ -149,15 +149,17 @@
 .pagEventList-dataArea,.pagEventList-dataTit--maxcom
     @include maxcom
         &:nth-child(1)
-            width: 600px
+            width: 440px
         &:nth-child(2)
-            width: 240px
+            width: 260px
         &:nth-child(3)
-            width: 270px
+            width: 280px
         &:nth-child(4)
-            width: 130px
+            width: 200px
         &:nth-child(5)
-            width: 150px
+            width: 110px
+        &:nth-child(6)
+            width: 140px
 .pagEventList-dataArea--data
 .pagEventList-btArea
     width: 100%
@@ -556,3 +558,41 @@
     // border-bottom: $gray-line
     @include maxcom-1920
         padding: 10px 140px 40px 410px
+
+
+//newsli.html
+.pagNewsList-dataTitArea,.pagNewsList-dataArea
+    // width: auto
+    padding: 25px 30px
+    display: flex
+    //不知為何，現在要加display: -webkit-box，flex才會是設定的固定寬度
+    display: -webkit-box
+    flex-wrap: nowrap
+    -webkit-overflow-scrolling: touch
+    -ms-overflow-style: -ms-autohiding-scrollbar 
+    align-items: center
+
+.pagNewsList-dataTit,.pagNewsList-data
+    display: flex
+    flex-wrap: nowrap
+    padding-right: 20px
+    &:nth-child(1)
+        width: 900px
+    &:nth-child(2)
+        width: 250px
+    &:nth-child(3)
+        width: 300px
+
+
+.pagNewsList-dataTit
+    color: $black
+
+.pagNewsList-dataArea
+    min-width: 1000px
+    padding: 20px 30px 
+    background: $bg-gray-200
+    border-radius: 8px
+    &:nth-of-type(2n)
+        background: #FFF
+    @include maxcom-1920
+        min-width: 100%

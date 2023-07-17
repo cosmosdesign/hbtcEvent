@@ -163,6 +163,10 @@ h6 .icon, p .icon, div .icon {
   opacity: 0.64;
 }
 
+.typo-wordBreak--all {
+  word-break: break-all;
+}
+
 /*排版設定*/
 /*gutter*/
 .gutter {
@@ -1448,6 +1452,75 @@ progress[value]::-webkit-progress-value {
   color: #FFF;
 }
 .btnCurcleRec-secondColor:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.btnCurcleRec-mainColor {
+  font-family: "Montserrat-Medium", sans-serif, "NotoSansTC-Regular", sans-serif, "Microsoft JhengHei";
+  font-size: 1.0625rem;
+  color: #0F172A;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 12px 22px rgba(210, 211, 216, 0.8);
+          box-shadow: 0px 12px 22px rgba(210, 211, 216, 0.8);
+  display: inline-block;
+  display: inline-block;
+  width: auto;
+  background: #1976D2;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  text-transform: capitalize;
+  font-size: 0.9375rem;
+  font-family: "NotoSansTC-Medium";
+  color: #FFF;
+  padding: 0 20px 0 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btnCurcleRec-mainColor:hover {
+  -webkit-box-shadow: 0px 14px 26px rgba(200, 201, 206, 0.8);
+          box-shadow: 0px 14px 26px rgba(200, 201, 206, 0.8);
+}
+.btnCurcleRec-mainColor:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.btnCurcleRec-mainColor:active {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.btnCurcleRec-mainColor:focus {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+@media all and (min-width: 48em) {
+  .btnCurcleRec-mainColor {
+    height: 56px;
+    line-height: 55px;
+    border-radius: 28px;
+    font-size: 1.0625rem;
+  }
+}
+.btnCurcleRec-mainColor .btn-btn-circleRec--icon {
+  margin-left: 20px;
+  vertical-align: -3px;
+}
+.btnCurcleRec-mainColor .btn-base--icon {
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
+.btnCurcleRec-mainColor:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+.btnCurcleRec-mainColor:active {
+  text-decoration: none;
+  color: #FFF;
+}
+.btnCurcleRec-mainColor:focus {
   text-decoration: none;
   color: #FFF;
 }
@@ -3642,12 +3715,12 @@ label {
 .patSmlNav-LogoNameBk--name {
   font-size: 1rem;
   font-family: "NotoSansTC-Medium";
-  color: #575A6A;
+  color: #323749;
   margin-bottom: 50px;
 }
 @media all and (min-width: 48em) {
   .patSmlNav-LogoNameBk--name {
-    font-size: 1.1875rem;
+    font-size: 1.38rem;
   }
 }
 
@@ -4869,19 +4942,22 @@ label {
 
 @media all and (min-width: 78em) {
   .pagEventList-dataArea:nth-child(1), .pagEventList-dataTit--maxcom:nth-child(1) {
-    width: 600px;
+    width: 440px;
   }
   .pagEventList-dataArea:nth-child(2), .pagEventList-dataTit--maxcom:nth-child(2) {
-    width: 240px;
+    width: 260px;
   }
   .pagEventList-dataArea:nth-child(3), .pagEventList-dataTit--maxcom:nth-child(3) {
-    width: 270px;
+    width: 280px;
   }
   .pagEventList-dataArea:nth-child(4), .pagEventList-dataTit--maxcom:nth-child(4) {
-    width: 130px;
+    width: 200px;
   }
   .pagEventList-dataArea:nth-child(5), .pagEventList-dataTit--maxcom:nth-child(5) {
-    width: 150px;
+    width: 110px;
+  }
+  .pagEventList-dataArea:nth-child(6), .pagEventList-dataTit--maxcom:nth-child(6) {
+    width: 140px;
   }
 }
 
@@ -5434,6 +5510,57 @@ label {
 @media all and (min-width: 115em) {
   .pagOrderIn-desArea {
     padding: 10px 140px 40px 410px;
+  }
+}
+
+.pagNewsList-dataTitArea, .pagNewsList-dataArea {
+  padding: 25px 30px;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagNewsList-dataTit, .pagNewsList-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-right: 20px;
+}
+.pagNewsList-dataTit:nth-child(1), .pagNewsList-data:nth-child(1) {
+  width: 900px;
+}
+.pagNewsList-dataTit:nth-child(2), .pagNewsList-data:nth-child(2) {
+  width: 250px;
+}
+.pagNewsList-dataTit:nth-child(3), .pagNewsList-data:nth-child(3) {
+  width: 300px;
+}
+
+.pagNewsList-dataTit {
+  color: #0F172A;
+}
+
+.pagNewsList-dataArea {
+  min-width: 1000px;
+  padding: 20px 30px;
+  background: #F7FAFF;
+  border-radius: 8px;
+}
+.pagNewsList-dataArea:nth-of-type(2n) {
+  background: #FFF;
+}
+@media all and (min-width: 115em) {
+  .pagNewsList-dataArea {
+    min-width: 100%;
   }
 }
 
