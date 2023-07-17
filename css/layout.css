@@ -1525,6 +1525,80 @@ progress[value]::-webkit-progress-value {
   color: #FFF;
 }
 
+.btnCurcleRec-whiteColor {
+  font-family: "Montserrat-Medium", sans-serif, "NotoSansTC-Regular", sans-serif, "Microsoft JhengHei";
+  font-size: 1.0625rem;
+  color: #0F172A;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 12px 22px rgba(210, 211, 216, 0.8);
+          box-shadow: 0px 12px 22px rgba(210, 211, 216, 0.8);
+  display: inline-block;
+  display: inline-block;
+  width: auto;
+  background: #FFF;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  text-transform: capitalize;
+  font-size: 0.9375rem;
+  font-family: "NotoSansTC-Medium";
+  color: #FFF;
+  padding: 0 20px 0 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #A7A9B2;
+  border: 1px solid #E1E5F4;
+}
+.btnCurcleRec-whiteColor:hover {
+  -webkit-box-shadow: 0px 14px 26px rgba(200, 201, 206, 0.8);
+          box-shadow: 0px 14px 26px rgba(200, 201, 206, 0.8);
+}
+.btnCurcleRec-whiteColor:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.btnCurcleRec-whiteColor:active {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.btnCurcleRec-whiteColor:focus {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+@media all and (min-width: 48em) {
+  .btnCurcleRec-whiteColor {
+    height: 56px;
+    line-height: 55px;
+    border-radius: 28px;
+    font-size: 1.0625rem;
+  }
+}
+.btnCurcleRec-whiteColor .btn-btn-circleRec--icon {
+  margin-left: 20px;
+  vertical-align: -3px;
+}
+.btnCurcleRec-whiteColor .btn-base--icon {
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
+.btnCurcleRec-whiteColor:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+.btnCurcleRec-whiteColor:active {
+  text-decoration: none;
+  color: #FFF;
+}
+.btnCurcleRec-whiteColor:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+.btnCurcleRec-whiteColor:hover {
+  color: #A4B7D1;
+}
+
 /*圓形按鈕*/
 .btnCircleMainColor {
   display: inline-block;
@@ -3720,7 +3794,7 @@ label {
 }
 @media all and (min-width: 48em) {
   .patSmlNav-LogoNameBk--name {
-    font-size: 1.38rem;
+    font-size: 1.3125rem;
   }
 }
 
@@ -3852,11 +3926,12 @@ label {
 }
 
 .patNavCopyright {
+  width: 230px;
   position: absolute;
   bottom: 50px;
-  font-size: 1rem;
-  font-family: "NotoSansTC-Regular";
-  color: #A4B7D1;
+  font-size: 0.9375rem;
+  font-family: "Montserrat-Regular", "NotoSansTC-Regular";
+  color: #A7A9B2;
 }
 
 /* 電腦視口header*/
@@ -3902,10 +3977,6 @@ label {
   float: left;
   margin: 0 30px 0 0;
 }
-.patBiteBt:hover, .patBiteBt:active, .patBiteBt:focus {
-  color: #7E818D;
-  text-decoration: none;
-}
 .patBiteBt::after {
   background: url(../images/arrow-right--gray--15.svg) no-repeat;
   width: 15px;
@@ -3920,10 +3991,10 @@ label {
 }
 
 .patBiteBt--in {
-  color: #7E818D;
+  color: #A4B7D1;
 }
 .patBiteBt--in:hover, .patBiteBt--in:active, .patBiteBt--in:focus {
-  color: #7E818D;
+  color: #A4B7D1;
   text-decoration: none;
 }
 
@@ -4942,13 +5013,13 @@ label {
 
 @media all and (min-width: 78em) {
   .pagEventList-dataArea:nth-child(1), .pagEventList-dataTit--maxcom:nth-child(1) {
-    width: 440px;
+    width: 430px;
   }
   .pagEventList-dataArea:nth-child(2), .pagEventList-dataTit--maxcom:nth-child(2) {
     width: 260px;
   }
   .pagEventList-dataArea:nth-child(3), .pagEventList-dataTit--maxcom:nth-child(3) {
-    width: 280px;
+    width: 270px;
   }
   .pagEventList-dataArea:nth-child(4), .pagEventList-dataTit--maxcom:nth-child(4) {
     width: 200px;
@@ -4957,7 +5028,7 @@ label {
     width: 110px;
   }
   .pagEventList-dataArea:nth-child(6), .pagEventList-dataTit--maxcom:nth-child(6) {
-    width: 140px;
+    width: 150px;
   }
 }
 

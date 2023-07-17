@@ -209,6 +209,14 @@
 .btnCurcleRec-mainColor
 	@include btn-circleRec($main-color)
 
+.btnCurcleRec-whiteColor
+	@include btn-circleRec(#FFF)
+	color: $text-gray-200
+	border: $gray-line
+	// background: $bg-gray-200
+	&:hover
+		color: $bg-gray-700
+
 
 /*圓形按鈕*/
 @mixin btn-circleBase($bgcolor)

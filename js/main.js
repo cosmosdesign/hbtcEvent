@@ -13,8 +13,8 @@ let NavContent = `
         <div class="patSmlNav-LogoNameBk">
             <img src="images/logo.png" alt="LOGO" class="patSmlNav-LogoNameBk--logo">
             <h1 class="patSmlNav-LogoNameBk--name">
-                臺中市政府衛生局 <br />
-                線上報名系統
+                臺中市政府 <br />
+                衛生局線上報名系統
             </h1>
         </div>
         <section class="patNavMenu">
@@ -47,8 +47,9 @@ let NavContent = `
             </ul>
         </section>
         <p class="patNavCopyright">
-            420206 臺中市豐原區中興路136號 <br />
-            請使用IE(第9版以上)或Chrome、FireFox、Edge等瀏覽器瀏覽
+            本網站為臺中市政府版權所有，請尊重智慧財產權，未經允許請勿任意轉載、複製或做商業用途。<br /><br />
+            請使用IE(第9版以上)或Chrome、FireFox、Edge等瀏覽器瀏覽 <br /><br />
+            420206 臺中市豐原區中興路136號 
         </p>
         
     </nav>
