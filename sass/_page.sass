@@ -137,7 +137,7 @@
     border-bottom: $gray_line
     padding-top: 8px
     padding-bottom: 8px
-    &:last-of-type
+    &:last-of-type,&:first-of-type
         border-bottom: none
     @include maxcom
         border-bottom: none
@@ -561,38 +561,124 @@
 
 
 //newsli.html
-.pagNewsList-dataTitArea,.pagNewsList-dataArea
-    // width: auto
-    padding: 25px 30px
-    display: flex
-    //不知為何，現在要加display: -webkit-box，flex才會是設定的固定寬度
-    display: -webkit-box
-    flex-wrap: nowrap
-    -webkit-overflow-scrolling: touch
-    -ms-overflow-style: -ms-autohiding-scrollbar 
-    align-items: center
-
-.pagNewsList-dataTit,.pagNewsList-data
-    display: flex
-    flex-wrap: nowrap
-    padding-right: 20px
-    &:nth-child(1)
-        width: 900px
-    &:nth-child(2)
-        width: 250px
-    &:nth-child(3)
-        width: 300px
 
 
-.pagNewsList-dataTit
-    color: $black
-
-.pagNewsList-dataArea
-    min-width: 1000px
-    padding: 20px 30px 
-    background: $bg-gray-200
-    border-radius: 8px
-    &:nth-of-type(2n)
-        background: #FFF
+.pagNewsListBk
+    @include maxcom
+        width: auto
+        padding-left: 12px
+        padding-right: 12px
+        padding-bottom: 15px
+        overflow-x: auto
+.pagNewsList
+    padding: 30px 
+    border-bottom: $gray_line
+    @include maxcom
+        width: auto
+        border-bottom: none
+        min-width: 200%
+        padding: 20px 30px 
+        background: $bg-gray-200
+        border-radius: 8px
+        &:nth-of-type(2n)
+            background: #FFF
     @include maxcom-1920
         min-width: 100%
+.pagNewsList-tit--phone
+    width: 100%
+    font:
+        size: $text-14
+        family: 'NotoSansTC-Regular', sans-serif
+    @include maxcom
+        display: none
+.pagNewsList-statusOrder--phone
+    width: 100%
+    @include maxcom
+        display: none
+.pagNewsList-statusOrder--phone--text
+    font:
+        size: $text-20
+        family: $text-styleMedium--ch
+    color: $main-color
+    // text-decoration: underline
+    img
+        width: 30px
+        height: 30px
+        margin: 0 12px 0 0
+        vertical-align: -8px
+//電腦時以表格呈現
+.pagNewsList--maxcomBk
+    @include maxcom
+        display: flex
+        //不知為何，現在要加display: -webkit-box，flex才會是設定的固定寬度
+        //而且用
+        display: -webkit-box
+        flex-wrap: nowrap
+        -webkit-overflow-scrolling: touch
+        -ms-overflow-style: -ms-autohiding-scrollbar 
+        align-items: center
+        
+//手機時以card呈現，電腦時以表格呈現
+.modPhoneCardMaxcomTable-dataArea
+    width: 100%
+    border-bottom: $gray_line
+    padding-top: 8px
+    padding-bottom: 8px
+    &:last-of-type
+        border-bottom: none
+    @include maxcom
+        border-bottom: none
+        padding-right: 20px
+        padding-top: 0px
+        padding-bottom: 0px
+              
+
+.pagNewsList-dataArea,.pagNewsList-dataTit--maxcom
+    @include maxcom
+        &:nth-child(1)
+            width: 900px
+        &:nth-child(2)
+            width: 250px
+        &:nth-child(3)
+            width: 300px
+
+.pagNewsList-dataArea--data
+.pagNewsList-btArea
+    width: 100%
+    padding-top: 20px
+    @include maxcom
+        padding-top: 0px
+
+//手機專用形式
+.pagNewsList-dataArea--tit--phone
+    display: block
+    min-width: 55px
+    @include maxcom
+        display: none
+
+//電腦專用形式
+.pagNewsList-dataArea--maxcom
+    display: none
+    opacity: 0
+    @include maxcom
+        opacity: 1
+        display: block
+
+
+//電腦專用tit
+.pagNewsList-dataTitArea--maxcom
+    display: none
+    @include maxcom
+        padding: 25px 30px
+        display: flex
+        //不知為何，現在要加display: -webkit-box，flex才會是設定的固定寬度
+        //而且用
+        display: -webkit-box
+        flex-wrap: nowrap
+        -webkit-overflow-scrolling: touch
+        -ms-overflow-style: -ms-autohiding-scrollbar 
+        align-items: center
+.pagNewsList-dataTit--maxcom
+    color: $black
+
+
