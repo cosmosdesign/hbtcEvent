@@ -1257,10 +1257,10 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1285,7 +1285,7 @@ progress[value]::-webkit-progress-value {
     height: 56px;
     line-height: 55px;
     border-radius: 28px;
-    font-size: 1.0625rem;
+    font-size: 1.15625rem;
   }
 }
 .btnCurcleRec-LinearGradient--em .btn-btn-circleRec--icon {
@@ -1327,10 +1327,10 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 200px;
@@ -1357,7 +1357,7 @@ progress[value]::-webkit-progress-value {
     height: 56px;
     line-height: 55px;
     border-radius: 28px;
-    font-size: 1.0625rem;
+    font-size: 1.15625rem;
   }
 }
 .btnCurcleRec-LinearGradient--success--large .btn-btn-circleRec--icon {
@@ -1403,10 +1403,10 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1431,7 +1431,7 @@ progress[value]::-webkit-progress-value {
     height: 56px;
     line-height: 55px;
     border-radius: 28px;
-    font-size: 1.0625rem;
+    font-size: 1.15625rem;
   }
 }
 .btnCurcleRec-secondColor .btn-btn-circleRec--icon {
@@ -1472,10 +1472,10 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1500,7 +1500,7 @@ progress[value]::-webkit-progress-value {
     height: 56px;
     line-height: 55px;
     border-radius: 28px;
-    font-size: 1.0625rem;
+    font-size: 1.15625rem;
   }
 }
 .btnCurcleRec-mainColor .btn-btn-circleRec--icon {
@@ -1541,10 +1541,10 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #A7A9B2;
@@ -1571,7 +1571,7 @@ progress[value]::-webkit-progress-value {
     height: 56px;
     line-height: 55px;
     border-radius: 28px;
-    font-size: 1.0625rem;
+    font-size: 1.15625rem;
   }
 }
 .btnCurcleRec-whiteColor .btn-btn-circleRec--icon {
@@ -1850,7 +1850,7 @@ progress[value]::-webkit-progress-value {
 
 label {
   font-family: "Montserrat-Medium", sans-serif, "NotoSansTC-Regular", sans-serif, "Microsoft JhengHei" !important;
-  font-size: 0.88rem !important;
+  font-size: 1rem !important;
   font-weight: normal !important;
   color: #575A6A;
   margin: 0 0 10px 0 !important;
@@ -1949,7 +1949,7 @@ label {
   line-height: 46px !important;
   border-radius: 8px !important;
   font-family: "Montserrat-Medium", sans-serif, "NotoSansTC-Regular", sans-serif, "Microsoft JhengHei" !important;
-  font-size: 0.9375rem !important;
+  font-size: 1rem !important;
 }
 @media all and (min-width: 78em) {
   .ui.selection.dropdown {
@@ -2119,7 +2119,7 @@ label {
 }
 /*自定義checkbox 及 radio 樣式*/
 .eleSectionTit {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   color: #0F172A;
   letter-spacing: 1px;
@@ -2132,12 +2132,12 @@ label {
 }
 
 .eleDataTit {
-  font-size: 0.88rem;
+  font-size: 0.9375rem;
   color: #A7A9B2;
 }
 @media all and (min-width: 48em) {
   .eleDataTit {
-    font-size: 1rem;
+    font-size: 1.0625rem;
   }
 }
 
@@ -2162,12 +2162,12 @@ label {
   }
 }
 .eleData {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: #7E818D;
 }
 @media all and (min-width: 48em) {
   .eleData {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -3773,28 +3773,32 @@ label {
 }
 
 .patSmlNav-LogoNameBk {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .patSmlNav-LogoNameBk--logo {
-  width: 70px;
-  margin-bottom: 10px;
+  width: 100px;
+  margin-bottom: 5px;
 }
 @media all and (min-width: 48em) {
   .patSmlNav-LogoNameBk--logo {
-    width: 100px;
+    width: 120px;
+    margin-bottom: 5px;
   }
 }
 
 .patSmlNav-LogoNameBk--name {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-family: "NotoSansTC-Medium";
   color: #323749;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 @media all and (min-width: 48em) {
   .patSmlNav-LogoNameBk--name {
-    font-size: 1.3125rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 80px;
+    letter-spacing: 1px;
   }
 }
 
@@ -3828,7 +3832,7 @@ label {
   letter-spacing: 0.5px;
   color: #A4B7D1;
   font-family: "NotoSansTC-Medium";
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
   letter-spacing: 1.5px;
   line-height: 58px;
 }
@@ -3929,10 +3933,11 @@ label {
 .patNavCopyright {
   width: 230px;
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   font-size: 0.9375rem;
   font-family: "Montserrat-Regular", "NotoSansTC-Regular";
   color: #A7A9B2;
+  line-height: 1.6;
 }
 
 /* 電腦視口header*/
@@ -4729,6 +4734,152 @@ label {
   }
 }
 
+.modInfoBk--line {
+  width: 100%;
+  border-radius: 6px;
+  background: #F7FAFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.modInfoBk--line:nth-of-type(2n) {
+  background: none;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--line {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.modInfoBk--line--gutter {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.modInfoBk-EminfoBk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.modInfoBk-EminfoBk--info {
+  border-left: 2px solid #F7FAFF;
+  border-right: 2px solid #F7FAFF;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 12px;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk-EminfoBk--info {
+    border-left: none;
+  }
+}
+
+.modInfoBk-EminfoBk--info:last-of-type {
+  border-right: none;
+}
+
+.modInfoBk--grid100 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid100 {
+    width: 100%;
+  }
+}
+
+.modInfoBk--grid20 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid20 {
+    width: 20%;
+  }
+}
+
+.modInfoBk--grid25 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid25 {
+    width: 25%;
+  }
+}
+
+.modInfoBk--grid33 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid33 {
+    width: 33%;
+  }
+}
+
+.modInfoBk--grid50 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid50 {
+    width: 50%;
+  }
+}
+
+.modInfoBk--grid66 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid66 {
+    width: 66%;
+  }
+}
+
+.modInfoBk--grid75 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid75 {
+    width: 75%;
+  }
+}
+
+.modInfoBk--grid80 {
+  width: 100%;
+}
+@media all and (min-width: 78em) {
+  .modInfoBk--grid80 {
+    width: 80%;
+  }
+}
+
 .modInfoBk-EminfoBk--info--tit {
   margin-bottom: -3px;
 }
@@ -4783,6 +4934,18 @@ label {
 }
 .modInfoBk-EminfoBk--lineDec:last-of-type {
   border-right: 2px solid #E1E5F4;
+}
+
+.pagOverLogoArea--sml {
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+@media all and (min-width: 64em) {
+  .pagOverLogoArea--sml {
+    display: none;
+  }
 }
 
 .pagOverDataSection {
@@ -4934,8 +5097,8 @@ label {
     width: auto;
     border-bottom: none;
     min-width: 200%;
-    padding: 20px 30px;
-    background: #F7FAFF;
+    padding: 20px 25px;
+    background: #F4F8FF;
     border-radius: 8px;
   }
   .pagEventList:nth-of-type(2n) {
@@ -5015,22 +5178,22 @@ label {
 
 @media all and (min-width: 78em) {
   .pagEventList-dataArea:nth-child(1), .pagEventList-dataTit--maxcom:nth-child(1) {
-    width: 430px;
+    width: 450px;
   }
   .pagEventList-dataArea:nth-child(2), .pagEventList-dataTit--maxcom:nth-child(2) {
-    width: 260px;
+    width: 220px;
   }
   .pagEventList-dataArea:nth-child(3), .pagEventList-dataTit--maxcom:nth-child(3) {
     width: 270px;
   }
   .pagEventList-dataArea:nth-child(4), .pagEventList-dataTit--maxcom:nth-child(4) {
-    width: 200px;
+    width: 220px;
   }
   .pagEventList-dataArea:nth-child(5), .pagEventList-dataTit--maxcom:nth-child(5) {
     width: 110px;
   }
   .pagEventList-dataArea:nth-child(6), .pagEventList-dataTit--maxcom:nth-child(6) {
-    width: 150px;
+    width: 160px;
   }
 }
 
@@ -5070,7 +5233,7 @@ label {
 }
 @media all and (min-width: 78em) {
   .pagEventList-dataTitArea--maxcom {
-    padding: 25px 30px;
+    padding: 25px 20px;
     display: -ms-flexbox;
     display: flex;
     display: -webkit-box;
@@ -5605,8 +5768,8 @@ label {
     width: auto;
     border-bottom: none;
     min-width: 200%;
-    padding: 20px 30px;
-    background: #F7FAFF;
+    padding: 20px 20px;
+    background: #F4F8FF;
     border-radius: 8px;
   }
   .pagNewsList:nth-of-type(2n) {

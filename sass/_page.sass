@@ -1,5 +1,13 @@
 //頁面畫面
 //index.html
+.pagOverLogoArea--sml
+    display: block
+    padding-left: 30px 
+    padding-right: 30px
+    padding-bottom: 30px
+    +computer
+        display: none
+
 .pagOverDataSection
     width: 100%
     @include ipad
@@ -90,8 +98,8 @@
         width: auto
         border-bottom: none
         min-width: 200%
-        padding: 20px 30px 
-        background: $bg-gray-200
+        padding: 20px 25px 
+        background: $bg-gray-300
         border-radius: 8px
         &:nth-of-type(2n)
             background: #FFF
@@ -149,17 +157,17 @@
 .pagEventList-dataArea,.pagEventList-dataTit--maxcom
     @include maxcom
         &:nth-child(1)
-            width: 430px
+            width: 450px
         &:nth-child(2)
-            width: 260px
+            width: 220px
         &:nth-child(3)
             width: 270px
         &:nth-child(4)
-            width: 200px
+            width: 220px
         &:nth-child(5)
             width: 110px
         &:nth-child(6)
-            width: 150px
+            width: 160px
 .pagEventList-dataArea--data
 .pagEventList-btArea
     width: 100%
@@ -187,7 +195,7 @@
 .pagEventList-dataTitArea--maxcom
     display: none
     @include maxcom
-        padding: 25px 30px
+        padding: 25px 20px
         display: flex
         //不知為何，現在要加display: -webkit-box，flex才會是設定的固定寬度
         //而且用
@@ -577,8 +585,8 @@
         width: auto
         border-bottom: none
         min-width: 200%
-        padding: 20px 30px 
-        background: $bg-gray-200
+        padding: 20px 20px 
+        background: $bg-gray-300
         border-radius: 8px
         &:nth-of-type(2n)
             background: #FFF
