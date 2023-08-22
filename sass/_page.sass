@@ -545,12 +545,14 @@
     // -webkit-overflow-scrolling: touch
     // -ms-overflow-style: -ms-autohiding-scrollbar 
     // align-items: center
+    +ipad
     @include maxcom
         // padding: 25px 40px
     @include maxcom-1920
         min-width: 100%
 
 .pagOrderInList-data
+    width: 100%
     display: flex
     flex-wrap: nowrap
     padding-right: 20px
@@ -560,6 +562,10 @@
     //     width: 840px
     // &:nth-child(3)
     //     width: 160px
+    +ipad
+        width: auto
+
+
 
 .pagOrderIn-desArea
     padding: 25px 30px

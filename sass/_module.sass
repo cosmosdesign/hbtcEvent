@@ -107,8 +107,8 @@
 	
 
 .modInfoBk--line--gutter
-	padding-left: 40px
-	padding-right: 40px
+	padding-left: 30px
+	padding-right: 30px
 	padding-top: 8px
 	padding-bottom: 7px
 	display: flex
@@ -116,6 +116,8 @@
 	justify-content: flex-start
 	flex-wrap: nowrap
 	@include maxcom
+		padding-left: 40px
+		padding-right: 40px
 		
 		
 
@@ -216,8 +218,11 @@
 	// margin-bottom: 12px
 	// @include maxcom
 		// border-left: none
+.modInfoBk-infoList--tit
+	min-width: 120px
 .modInfoBk-EminfoBk--info--tit
 	margin-bottom: -3px
+	min-width: 120px
 .modInfoBk-EminfoBk--info--data
 	font:
 		family: $text-styleRegular--en,$text-styleMedium--ch
@@ -236,17 +241,19 @@
 	@include maxcom-1920
 		padding: 12px 40px
 	.modInfoBk-EminfoBk--info--tit
-		min-width: 140px
+		// min-width: 140px
 
 .modInfoBk-EminfoBk--info:last-of-type
 	border-right: none
 
 .modInfoBk-EminfoBk--lineDec
-	border-left: 2px solid $main-color-100
 	padding-left: 30px
 	padding-right: 30px
-	margin: 10px
-	+maxcom-1920
-		margin: 0px
-	&:last-of-type
-		border-right: 2px solid $main-color-100
+	margin-bottom: 15px
+	width: 100%
+	+ipad
+		width: auto
+		border-left: 2px solid $main-color-100
+		margin-bottom: 0px
+		&:last-of-type
+			border-right: 2px solid $main-color-100

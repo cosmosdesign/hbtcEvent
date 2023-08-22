@@ -126,6 +126,10 @@ h6 .icon, p .icon, div .icon {
   font-size: 1.38rem;
 }
 
+.typoText-24 {
+  font-size: 1.5rem;
+}
+
 .typoText-32 {
   font-size: 2rem;
 }
@@ -142,6 +146,14 @@ h6 .icon, p .icon, div .icon {
 
 .typoRegular--en {
   font-family: "Montserrat-Regular";
+}
+
+.typoMedium--en {
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.typoBold--en {
+  font-family: "Montserrat-Bold", sans-serif;
 }
 
 .typoWeight--medium {
@@ -3782,7 +3794,7 @@ label {
 }
 @media all and (min-width: 48em) {
   .patSmlNav-LogoNameBk--logo {
-    width: 120px;
+    width: 115px;
     margin-bottom: 5px;
   }
 }
@@ -3795,7 +3807,7 @@ label {
 }
 @media all and (min-width: 48em) {
   .patSmlNav-LogoNameBk--name {
-    font-size: 1.5rem;
+    font-size: 1.4375rem;
     line-height: 1.6;
     margin-bottom: 80px;
     letter-spacing: 1px;
@@ -3937,7 +3949,7 @@ label {
   font-size: 0.9375rem;
   font-family: "Montserrat-Regular", "NotoSansTC-Regular";
   color: #A7A9B2;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* 電腦視口header*/
@@ -4005,7 +4017,7 @@ label {
 }
 
 .patH1Tit.patH1Tit {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "NotoSansTC-Medium";
   position: fixed;
   z-index: 4;
@@ -4761,8 +4773,8 @@ label {
 }
 
 .modInfoBk--line--gutter {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 8px;
   padding-bottom: 7px;
   display: -webkit-box;
@@ -4777,6 +4789,13 @@ label {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
+@media all and (min-width: 78em) {
+  .modInfoBk--line--gutter {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .modInfoBk-EminfoBk {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4880,8 +4899,13 @@ label {
   }
 }
 
+.modInfoBk-infoList--tit {
+  min-width: 120px;
+}
+
 .modInfoBk-EminfoBk--info--tit {
   margin-bottom: -3px;
+  min-width: 120px;
 }
 
 .modInfoBk-EminfoBk--info--data {
@@ -4913,27 +4937,25 @@ label {
     padding: 12px 40px;
   }
 }
-.modInfoBk-EminfoBk--info--textDes .modInfoBk-EminfoBk--info--tit {
-  min-width: 140px;
-}
-
 .modInfoBk-EminfoBk--info:last-of-type {
   border-right: none;
 }
 
 .modInfoBk-EminfoBk--lineDec {
-  border-left: 2px solid #E1E5F4;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 10px;
+  margin-bottom: 15px;
+  width: 100%;
 }
-@media all and (min-width: 115em) {
+@media all and (min-width: 48em) {
   .modInfoBk-EminfoBk--lineDec {
-    margin: 0px;
+    width: auto;
+    border-left: 2px solid #E1E5F4;
+    margin-bottom: 0px;
   }
-}
-.modInfoBk-EminfoBk--lineDec:last-of-type {
-  border-right: 2px solid #E1E5F4;
+  .modInfoBk-EminfoBk--lineDec:last-of-type {
+    border-right: 2px solid #E1E5F4;
+  }
 }
 
 .pagOverLogoArea--sml {
@@ -5732,12 +5754,18 @@ label {
 }
 
 .pagOrderInList-data {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding-right: 20px;
+}
+@media all and (min-width: 48em) {
+  .pagOrderInList-data {
+    width: auto;
+  }
 }
 
 .pagOrderIn-desArea {
