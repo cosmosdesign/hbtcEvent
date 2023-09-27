@@ -67,11 +67,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 h6, p, div {
   letter-spacing: 0.5px;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 @media all and (min-width: 78em) {
   h6, p, div {
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
   }
 }
 h6 .icon, p .icon, div .icon {
@@ -325,7 +325,7 @@ body {
   color: #0F172A;
   line-height: 1.8;
   letter-spacing: 0.5px;
-  background: #FBFCFF url(../images/page-bg.png) repeat;
+  background: #EFF3FA url(../images/page-bg.png) repeat;
   background-size: auto 100%;
 }
 @media all and (min-width: 78em) {
@@ -363,17 +363,16 @@ a:hover {
 /*無障礙focus用*/
 /*scrollbar*/
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #FBFCFF;
+  background: #F2F6FC;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #E1E5F4;
-  border-radius: 8px;
+  background: #D3D7E6;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1269,7 +1268,7 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
   padding: 0 25px 0 25px;
@@ -1339,7 +1338,7 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
   padding: 0 25px 0 25px;
@@ -1415,7 +1414,7 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
   padding: 0 25px 0 25px;
@@ -1484,7 +1483,7 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
   padding: 0 25px 0 25px;
@@ -1553,7 +1552,7 @@ progress[value]::-webkit-progress-value {
   line-height: 50px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-family: "NotoSansTC-Medium";
   color: #FFF;
   padding: 0 25px 0 25px;
@@ -1862,7 +1861,7 @@ progress[value]::-webkit-progress-value {
 
 label {
   font-family: "Montserrat-Medium", sans-serif, "NotoSansTC-Regular", sans-serif, "Microsoft JhengHei" !important;
-  font-size: 1rem !important;
+  font-size: 1.0625rem !important;
   font-weight: normal !important;
   color: #575A6A;
   margin: 0 0 10px 0 !important;
@@ -1870,7 +1869,7 @@ label {
 }
 @media all and (min-width: 78em) {
   label {
-    font-size: 1.0625rem !important;
+    font-size: 1.1875rem !important;
   }
 }
 
@@ -2013,14 +2012,15 @@ label {
   line-height: 46px !important;
   border-radius: 8px !important;
   font-family: "Montserrat-Medium", sans-serif, "NotoSansTC-Regular", sans-serif, "Microsoft JhengHei" !important;
-  font-size: 0.9375rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
 }
 @media all and (min-width: 78em) {
   .ui.form input, .ui.form input[type=text], .ui.form input[type=number], .ui.form input[type=email], .ui.form input[type=password], .ui.form select {
     height: 52px;
     border-radius: 12px !important;
     line-height: 52px !important;
-    font-size: 1.0625rem !important;
+    font-size: 1.125rem !important;
   }
 }
 .ui.form input:hover, .ui.form input[type=text]:hover, .ui.form input[type=number]:hover, .ui.form input[type=email]:hover, .ui.form input[type=password]:hover, .ui.form select:hover {
@@ -2210,8 +2210,8 @@ label {
   width: 100%;
   background: #FFF;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 15px 20px #E1E6F7;
-          box-shadow: 0px 15px 20px #E1E6F7;
+  -webkit-box-shadow: 0px 15px 25px #DCE1F2;
+          box-shadow: 0px 15px 25px #DCE1F2;
 }
 
 .eleCard-fid {
@@ -4031,7 +4031,7 @@ label {
     position: relative;
     top: 0;
     left: 0;
-    margin: 35px 0 40px 0;
+    margin: 30px 0 40px 0;
     padding: 0 50px;
     font-size: 1.5rem;
   }
@@ -4749,7 +4749,7 @@ label {
 .modInfoBk--line {
   width: 100%;
   border-radius: 6px;
-  background: #F7FAFF;
+  background: #F2F6FC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4900,12 +4900,12 @@ label {
 }
 
 .modInfoBk-infoList--tit {
-  min-width: 120px;
+  min-width: 140px;
 }
 
 .modInfoBk-EminfoBk--info--tit {
   margin-bottom: -3px;
-  min-width: 120px;
+  min-width: 140px;
 }
 
 .modInfoBk-EminfoBk--info--data {
@@ -4915,7 +4915,7 @@ label {
 .modInfoBk-EminfoBk--info--textDes {
   width: 100%;
   border-radius: 6px;
-  background: #F7FAFF;
+  background: #F2F6FC;
   padding: 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5120,7 +5120,7 @@ label {
     border-bottom: none;
     min-width: 200%;
     padding: 20px 25px;
-    background: #F4F8FF;
+    background: #F2F6FC;
     border-radius: 8px;
   }
   .pagEventList:nth-of-type(2n) {
@@ -5797,7 +5797,7 @@ label {
     border-bottom: none;
     min-width: 200%;
     padding: 20px 20px;
-    background: #F4F8FF;
+    background: #F2F6FC;
     border-radius: 8px;
   }
   .pagNewsList:nth-of-type(2n) {
