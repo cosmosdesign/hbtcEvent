@@ -5200,21 +5200,24 @@ label {
 
 @media all and (min-width: 78em) {
   .pagEventList-dataArea:nth-child(1), .pagEventList-dataTit--maxcom:nth-child(1) {
-    width: 450px;
+    width: 400px;
   }
   .pagEventList-dataArea:nth-child(2), .pagEventList-dataTit--maxcom:nth-child(2) {
     width: 220px;
   }
   .pagEventList-dataArea:nth-child(3), .pagEventList-dataTit--maxcom:nth-child(3) {
-    width: 270px;
+    width: 190px;
   }
   .pagEventList-dataArea:nth-child(4), .pagEventList-dataTit--maxcom:nth-child(4) {
-    width: 220px;
+    width: 210px;
   }
   .pagEventList-dataArea:nth-child(5), .pagEventList-dataTit--maxcom:nth-child(5) {
     width: 110px;
   }
   .pagEventList-dataArea:nth-child(6), .pagEventList-dataTit--maxcom:nth-child(6) {
+    width: 170px;
+  }
+  .pagEventList-dataArea:nth-child(7), .pagEventList-dataTit--maxcom:nth-child(7) {
     width: 160px;
   }
 }
